@@ -32,7 +32,8 @@ body.escurecer::before {
     left: 0;
 
 }
-header {Add commentMore actions
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,12 +43,16 @@ header {Add commentMore actions
     margin-inline: auto;
 
 }
+
+
+
 header button {
     border: none;
     background: none;
     width: fit-content;
 
 }
+
 header nav.mobile {
     position: fixed;
     background-color: var(--almost-white);
@@ -64,14 +69,17 @@ header nav.mobile {
 
     transition: 0.7s;
 }
+
 header nav.mobile.abrir {
     right: 0;
 
 }
+
 header nav button {
     align-self: flex-end;
     margin-bottom: 4rem;
 }
+
 header .mobile a {
     text-decoration: none;
     color: var(--dark-blue);
@@ -199,30 +207,48 @@ main {
 }
 
 @media(min-width: 1110px) {
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.75rem;
-}
-
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
 .primeira-secao {
-    grid-column: 1 / 3;
-}
+        grid-column: 1 / 3;
 
-    header > button {
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+
     }
 
-    header .desktop{
+    .primeira-secao picture {
+        grid-column: 1 / 3;
+
+    }
+
+    .primeira-secao img {
+        margin: 0;
+    }
+
+    .primeira-secao h1 {
+        font-size: 3.5rem;
+    }
+
+    .segunda-secao h2 {
+        font-size: 2.5rem;
+    }
+    header>button {
+        display: none;
+    }
+    header .desktop {
         display: flex;
         gap: 2.5rem;
     }
 
     header .desktop a {
-        font-size:0.9375rem;
+        font-size: 0.9375rem;
         line-height: 1.625rem;
         text-decoration: none;
-        color: var(--gunmetal); 
+         color: var(--gunmetal);
     }
 }
